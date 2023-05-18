@@ -1,0 +1,24 @@
+﻿<Window x:Class="Taxi_Manage.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taxi_Manage"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid x:Name="tn_label">
+        <DataGrid x:Name="transaction" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="347,54,0,101"/>
+        <Button x:Name="search" Content="Search" HorizontalAlignment="Left" Margin="129,114,0,0" VerticalAlignment="Top" Click="search_Click"/>
+        <TextBox x:Name="taxiNumber" HorizontalAlignment="Left" Margin="89,78,0,0" TextWrapping="Wrap" Text="Enter taxi number" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Company total Income" HorizontalAlignment="Left" Margin="83,307,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="companyTotal" Content="Label" HorizontalAlignment="Left" Margin="129,344,0,0" VerticalAlignment="Top"/>
+        <Label Content="Transaction Logs" HorizontalAlignment="Left" Margin="477,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Search with taxi number" HorizontalAlignment="Left" Margin="80,29,0,0" VerticalAlignment="Top"/>
+        <Label Content="Taxi number" HorizontalAlignment="Left" Margin="58,204,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total paid to taxi" HorizontalAlignment="Left" Margin="34,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tn_label1" Content="" HorizontalAlignment="Left" Margin="209,0,0,0" VerticalAlignment="Center"/>
+        <Label x:Name="tp_label" Content="" HorizontalAlignment="Left" Margin="209,246,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.185,0.555"/>
+        <Button x:Name="refresh" Content="Refresh" HorizontalAlignment="Left" Margin="555,362,0,0" VerticalAlignment="Top" Click="refresh_Click"/>
+
+    </Grid>
+</Window>

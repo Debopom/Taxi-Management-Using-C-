@@ -1,0 +1,28 @@
+﻿<Window x:Class="Taxi_Manage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taxi_Manage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="add_rank" Content="Add to rank" HorizontalAlignment="Left" Margin="68,93,0,0" VerticalAlignment="Top" Click="add_rank_Click"/>
+        <TextBox x:Name="taxi_number" HorizontalAlignment="Left" Margin="13,55,0,0" TextWrapping="Wrap" Text="Taxi Number" VerticalAlignment="Top" Width="176" TextChanged="taxi_number_TextChanged_1"/>
+        <ListBox x:Name="rank_box" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="13,158,611,31" Width="NaN"/>
+        <Button x:Name="leaveRank" Content="Leave Rank" HorizontalAlignment="Left" Margin="325,133,0,0" VerticalAlignment="Top" Click="leaveRank_Click"/>
+        <TextBox x:Name="destination" HorizontalAlignment="Left" Margin="297,55,0,0" TextWrapping="Wrap" Text="Destination" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="fare" HorizontalAlignment="Left" Margin="297,95,0,0" TextWrapping="Wrap" Text="Fare" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="taxis" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="549,55,10,167"/>
+        <TextBox x:Name="dropTaxiNum" HorizontalAlignment="Left" Margin="297,249,0,0" TextWrapping="Wrap" Text="Taxi number" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="dropFare" Content="Drop Fare" HorizontalAlignment="Left" Margin="329,300,0,0" VerticalAlignment="Top" Click="dropFare_Click"/>
+        <Label Content="Taxi Joins Rank" HorizontalAlignment="Left" Margin="57,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Taxi Leaves Rank" HorizontalAlignment="Left" Margin="308,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Taxi Drops Fare" HorizontalAlignment="Left" Margin="308,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="All taxis status" HorizontalAlignment="Left" Margin="627,15,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="refresh" Content="Refresh" HorizontalAlignment="Left" Margin="648,310,0,0" VerticalAlignment="Top" Click="refresh_Click" RenderTransformOrigin="0.51,-0.413"/>
+        <Label Content="Currently in Rank" HorizontalAlignment="Left" Margin="51,125,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="transaction" Content="Transaction Log" HorizontalAlignment="Left" Margin="626,359,0,0" VerticalAlignment="Top" Click="transaction_Click"/>
+
+    </Grid>
+</Window>
